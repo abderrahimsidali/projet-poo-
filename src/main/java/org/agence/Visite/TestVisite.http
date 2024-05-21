@@ -1,0 +1,37 @@
+GET http://localhost:8000/visite
+# trouvver tous les visites
+
+
+###
+
+GET http://localhost:8000/visite/id
+# trouver une visite par id
+
+###
+
+POST http://localhost:8000/visite
+# ajouter une visite
+Content-Type: application/json
+
+
+{
+  "idBien": "5f5b3b3b1f1b3c2b3b3b3b3b",
+  "dateVisite": "2020-09-11",
+  "idClient": "5f5b3b3b1f1b3c2b3b3b3b3b"
+}
+
+###
+
+PUT http://localhost:8000/visite/id
+# modifier une visite
+Content-Type: application/json
+
+{
+  "dateVisite": "2020-09-11"
+}
+
+
+###
+
+DELETE http://localhost:8000/visite/id
+# supprimer une visite

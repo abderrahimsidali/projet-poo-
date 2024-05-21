@@ -1,0 +1,42 @@
+GET http://localhost:8000/bien
+# trouvver tous les biens
+
+
+###
+
+GET http://localhost:8000/bien/id
+# trouver un bien par id
+
+###
+
+POST http://localhost:8000/bien
+# ajouter un bien
+Content-Type: application/json
+
+
+{
+  "prix": 100000,
+  "superficie": 100,
+  "adresse": "alger",
+  "dateAjout": "2021-01-01",
+  "nomProprietaire": "Abderrahim",
+  "prenomProprietaire": "Sidali",
+    "emailProprietaire": "sidali@hotmail.com",
+  "telephoneProprietaire": "0555555555"
+}
+
+###
+
+PUT http://localhost:8000/bien/id
+# modifier un bien
+Content-Type: application/json
+
+{
+  "adresse": "oran"
+}
+
+
+###
+
+DELETE http://localhost:8000/bien/id
+# supprimer un bien

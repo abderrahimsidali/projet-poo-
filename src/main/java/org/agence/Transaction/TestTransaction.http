@@ -1,0 +1,41 @@
+GET http://localhost:8000/transaction
+# trouvver tous les transactions
+
+
+###
+
+GET http://localhost:8000/transaction/id
+# trouver une transaction par id
+
+###
+
+POST http://localhost:8000/transaction
+# ajouter une transaction
+Content-Type: application/json
+
+
+{
+  "dateTransaction": "2021-05-12",
+  "description": "Achat d'un villa",
+  "montant": 5000,
+  "fraisAgence": 500,
+    "idBien": "60a0b3b3b3b3b3b3b3b3b3b3",
+      "idClient": "60a0b3b3b3b3b3b3b3b3b3"
+}
+
+###
+
+PUT http://localhost:8000/transaction/id
+# modifier une transaction
+Content-Type: application/json
+
+{
+  "nom": "Abderrahim",
+  "prenom": "Sidali"
+}
+
+
+###
+
+DELETE http://localhost:8000/transaction/id
+# supprimer une transaction

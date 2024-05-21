@@ -1,0 +1,37 @@
+GET http://localhost:8000/conseil
+# trouvver tous les conseils
+
+
+###
+
+GET http://localhost:8000/conseil/id
+# trouver un conseil par id
+
+###
+
+POST http://localhost:8000/conseil
+# ajouter un conseil
+Content-Type: application/json
+
+
+{
+  "conseil": "Acheter un bien immobilier est un investissement sûr et rentable",
+  "id_bien": "1",
+    "id_agent": "1"
+}
+
+###
+
+PUT http://localhost:8000/conseil/id
+# modifier un conseil
+Content-Type: application/json
+
+{
+  "conseil": "Acheter un bien immobilier est un investissement sûr et rentable"
+}
+
+
+###
+
+DELETE http://localhost:8000/conseil/id
+# supprimer un conseil

@@ -1,0 +1,39 @@
+GET http://localhost:8000/client
+# trouvver tous les clients
+
+
+###
+
+GET http://localhost:8000/client/id
+# trouver un client par id
+
+###
+
+POST http://localhost:8000/client
+# ajouter un client
+Content-Type: application/json
+
+
+{
+  "nom": "Abderahim",
+  "prenom": "SidAli",
+  "email": "sidali@gmail.com",
+"telephone": "0666666666"
+}
+
+###
+
+PUT http://localhost:8000/client/id
+# modifier un client
+Content-Type: application/json
+
+{
+  "nom": "Abderrahim",
+  "prenom": "Sidali"
+}
+
+
+###
+
+DELETE http://localhost:8000/client/id
+# supprimer un client

@@ -1,0 +1,39 @@
+GET http://localhost:8000/agentimmobilier
+# trouvver tous les agents immobiliers
+
+
+###
+
+GET http://localhost:8000/agentimmobilier/664cf00051896478dfa583a6
+# trouver un agent immobilier par son id
+
+###
+
+POST http://localhost:8000/agentimmobilier
+# ajouter un agent immobilier
+Content-Type: application/json
+
+
+{
+    "nom": "Abderahim",
+    "prenom": "SidAli",
+    "email": "sidali@gmail.com",
+  "image": "https://www.google.com"
+}
+
+###
+
+PUT http://localhost:8000/agentimmobilier/id
+# modifier un agent immobilier
+Content-Type: application/json
+
+{
+    "nom": "Abderrahim",
+    "prenom": "Sidali"
+}
+
+
+###
+
+DELETE http://localhost:8000/agentimmobilier/664cf00051896478dfa583a6
+# supprimer un agent immobilier
